@@ -4,7 +4,15 @@ namespace Codiliateur\TransHelpers;
 
 class TransHelpers
 {
-    public function transRecurcive($key, $replaces = [], $locale = null)
+    /**
+     * Recursive translations
+     *
+     * @param $key
+     * @param $replaces
+     * @param $locale
+     * @return mixed
+     */
+    public function transRecursive($key, $replaces = [], $locale = null)
     {
         $locale = $locale ?? \App::getLocale();
         $result = trans($key, $replaces, $locale);
