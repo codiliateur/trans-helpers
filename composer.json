@@ -9,10 +9,10 @@
             "Codiliateur\\TransHelpers\\": "src/"
         },
         "files": [
-            "helpers.php"
+            "src/helpers.php"
         ]
     },
-    "authors": [
+    "authors": [git
         {
             "name": "Ilia Khondozhko",
             "email": "ilia.khondozhko@gmail.com"
