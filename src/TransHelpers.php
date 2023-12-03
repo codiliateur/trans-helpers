@@ -7,12 +7,12 @@ class TransHelpers
     /**
      * Recursive translations
      *
-     * @param $key
-     * @param $replaces
-     * @param $locale
+     * @param null|string $key
+     * @param array $replaces
+     * @param null|string $locale
      * @return mixed
      */
-    public function transRecursive($key, $replaces = [], $locale = null)
+    public static function transRecursive($key, $replaces = [], $locale = null)
     {
         $locale = $locale ?? \App::getLocale();
         $result = trans($key, $replaces, $locale);
