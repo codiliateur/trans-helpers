@@ -1,0 +1,30 @@
+{
+    "name": "codiliateur/trans-helpers",
+    "description": "Useful translation extensions",
+    "keywords": ["laravel", "translations", "codiliateur"],
+    "type": "package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Codiliateur\\TransHelpers\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ilia Khondozhko",
+            "email": "ilia.khondozhko@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.0",
+        "laravel": "^8.0|^9.0|^10.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Codiliateur\\TransHelpers\\TransHelpersServiceProvider"
+            ]
+        }
+    }
+}
