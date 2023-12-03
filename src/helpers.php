@@ -13,6 +13,6 @@ if (! function_exists('trans_r')) {
      */
     function trans_r($key, $replaces = [], $locale = null)
     {
-        return TransHelpers::transRecursive();
+        return TransHelpers::transRecursive($key, $replaces, $locale);
     }
 }
