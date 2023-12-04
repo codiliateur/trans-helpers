@@ -41,8 +41,25 @@ return [
     ]
 ];
 ```
+If you call standard function `trans` then you obtain just key translations from **fr** lang-file. 
+Call
 
-Call `trans_r('models/person.attributes', [], 'fr')` returns all keys
+    trans('models/person.attributes', [], 'fr')
+
+returns
+
+```
+[
+    "first_name" => "Prénome",          // 'fr'
+    "last_name" => "Nom de famille",    // 'fr'
+];
+```
+
+But call `trans_r`
+
+    `trans_r('models/person.attributes', [], 'fr')` 
+
+returns all keys
 
 ```
 [
@@ -50,14 +67,5 @@ Call `trans_r('models/person.attributes', [], 'fr')` returns all keys
     "first_name" => "Prénome",          // 'fr'
     "last_name" => "Nom de famille",    // 'fr'
     "age" => "Age",                     // 'en' - fallback locale
-];
-```
-
-unlike the standard function call returns just keys from french lang-file
-
-```
-[
-    "first_name" => "Prénome",          // 'fr'
-    "last_name" => "Nom de famille",    // 'fr'
 ];
 ```
